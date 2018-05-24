@@ -1,0 +1,25 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!--<filter>-->
+    <!--<filter-name>commonInformationFilter</filter-name>-->
+    <!--<filter-class>alex.com.blog.filter.CommonInformationFilter</filter-class>-->
+  <!--</filter>-->
+  <!--<filter-mapping>-->
+    <!--<filter-name>commonInformationFilter</filter-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
+
+  <!--<filter>-->
+    <!--<filter-name>personPageInformationFilter</filter-name>-->
+    <!--<filter-class>alex.com.blog.filter.PersonPageInformationFilter</filter-class>-->
+  <!--</filter>-->
+  <!--<filter-mapping>-->
+    <!--<filter-name>personPageInformationFilter</filter-name>-->
+    <!--<url-pattern>/person</url-pattern>-->
+  <!--</filter-mapping>-->
+
+</web-app>

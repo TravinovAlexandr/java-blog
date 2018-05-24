@@ -1,0 +1,103 @@
+.alertBackLayout {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+}
+.alertBox {
+    background: #808080;
+    position: relative;
+    padding: 40px;
+    width: 600px;
+    height: 200px;
+    color: white;
+    margin: 0 auto;
+    top: 100px;
+    display: none;
+    border: 2px darkslategray solid;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+.alertBoxMessage {
+    padding-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.butOK {
+    font-size: 15px;
+    background-color: #84B22D;
+    width: 80px;
+    height: 30px;
+    color: white;
+}
+.butOK:hover {
+    box-shadow: 0 0 5px #FF3333;
+}
+.butCancel {
+    font-size: 15px;
+    background-color: #FF3333;
+    width: 80px;
+    height: 30px;
+    color: white;
+}
+.butCancel:hover {
+    box-shadow: 0 0 5px #FF3333;
+}
+.confirmBackLayout {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+}
+.confirmBoxMessage {
+    padding-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+.confirmBox {
+
+    background: #808080;
+    position: relative;
+    padding: 40px;
+    width: 600px;
+    height: 200px;
+    color: white;
+    margin: 0 auto;
+    top: 100px;
+    display: none;
+    border: 2px darkslategray solid;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.closeBtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closeBtn:hover {
+    color: darkslategrey;
+}
+
+.authorizeContent {
+    display: none;
+}
