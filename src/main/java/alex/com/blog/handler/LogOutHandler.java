@@ -22,14 +22,18 @@ public class LogOutHandler implements LogoutHandler {
 
             Cookie[] cookies = httpServletRequest.getCookies();
 
-            for (Cookie cooka : cookies) {
-                if(cooka.getName().equals("jus-id")) cooka.setMaxAge(0);
-                if(cooka.getName().equals("rmbmt")) cooka.setMaxAge(0);
+            for (Cookie cookie : cookies) {
+                if(cookie.getName().equals("jus-id")) {
+                    cookie.setMaxAge(0);
+                    httpServletResponse.addCookie(cookie);
+                    {
+                if(cookie.getName().equals("rmbmt")) {
+                    cookie.setMaxAge(0);
+                    httpServletResponse.addCookie(cookie);
+                    {
             }
-
-            httpServletRequest.getSession().invalidate();
-            authentication.setAuthenticated(false);
-
+            httpServletRequest.getSession(false).invalidate();
+            
         } else {
             throw new HandlerException();
         }
