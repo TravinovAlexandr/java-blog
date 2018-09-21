@@ -29,7 +29,6 @@ open class ElasticSearchController @Autowired constructor(private var elasticSea
             elasticSearchService.save(articleService.findAll())
         } catch (e : ServiceException) {
             LOGGER!!.debug(" elasticSearchService.save(articleService.findAll.  " + e.message)
-
         }
     }
 
@@ -39,7 +38,7 @@ open class ElasticSearchController @Autowired constructor(private var elasticSea
             return if (header !== null) elasticSearchService.findByHeaderStartsWith(header)
             else return mutableListOf()
         } catch (e : ServiceException) {
-            LOGGER!!.debug("elasticSearchService.findByHeaderStartsWith result a exception.  " + e.message)
+            LOGGER!!.debug("elasticSearchService.findByHeaderStartsWith result an exception.  " + e.message)
             throw RuntimeException()
         }
     }
